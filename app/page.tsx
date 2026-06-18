@@ -1,5 +1,7 @@
 import Link from "next/link";
-import { APP_NAME, APP_DESCRIPTION, PRODUCT_CATEGORIES } from "@/lib/constants";
+import { SiteHeader } from "@/components/layout/SiteHeader";
+import { SiteFooter } from "@/components/layout/SiteFooter";
+import { APP_DESCRIPTION, PRODUCT_CATEGORIES } from "@/lib/constants";
 
 const STEPS = [
   { no: "1", title: "ขอราคาทันที", desc: "เลือกสินค้า ขนาด วัสดุ จำนวน และอัปโหลดไฟล์งาน ระบบคำนวณราคาให้อัตโนมัติ" },
@@ -18,30 +20,10 @@ const CATEGORY_EMOJI: Record<string, string> = {
 export default function Home() {
   return (
     <div className="flex flex-1 flex-col bg-white text-zinc-900">
-      {/* Navbar */}
-      <header className="sticky top-0 z-10 border-b border-zinc-200 bg-white/80 backdrop-blur">
-        <div className="mx-auto flex h-16 w-full max-w-6xl items-center justify-between px-6">
-          <div className="flex items-center gap-2 font-semibold">
-            <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-orange-500 text-white">
-              K2
-            </span>
-            <span>{APP_NAME}</span>
-          </div>
-          <nav className="flex items-center gap-6 text-sm">
-            <a href="#products" className="hidden text-zinc-600 hover:text-zinc-900 sm:block">หมวดสินค้า</a>
-            <a href="#steps" className="hidden text-zinc-600 hover:text-zinc-900 sm:block">ขั้นตอนสั่งงาน</a>
-            <Link
-              href="/dashboard"
-              className="rounded-full bg-black px-4 py-2 font-medium text-white transition-colors hover:bg-zinc-800"
-            >
-              เข้าสู่ระบบ
-            </Link>
-          </nav>
-        </div>
-      </header>
+      <SiteHeader />
 
       {/* Hero */}
-      <section className="mx-auto w-full max-w-6xl px-6 py-24 text-center sm:py-32">
+      <section className="mx-auto w-full max-w-6xl px-4 py-20 text-center sm:px-6 sm:py-32">
         <span className="inline-flex items-center rounded-full bg-orange-50 px-3 py-1 text-sm font-medium text-orange-600 ring-1 ring-inset ring-orange-200">
           Operating System สำหรับโรงงานงานพิมพ์
         </span>
@@ -55,34 +37,35 @@ export default function Home() {
         <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
           <Link
             href="/quote"
-            className="flex h-12 items-center justify-center rounded-full bg-orange-500 px-8 font-medium text-white transition-colors hover:bg-orange-600"
+            className="flex h-12 w-full items-center justify-center rounded-full bg-orange-500 px-8 font-medium text-white transition-colors hover:bg-orange-600 sm:w-auto"
           >
             ขอราคาทันที
           </Link>
           <Link
-            href="/dashboard"
-            className="flex h-12 items-center justify-center rounded-full border border-zinc-300 px-8 font-medium transition-colors hover:bg-zinc-50"
+            href="/products"
+            className="flex h-12 w-full items-center justify-center rounded-full border border-zinc-300 px-8 font-medium transition-colors hover:bg-zinc-50 sm:w-auto"
           >
-            เข้าสู่ระบบจัดการ
+            ดูสินค้าทั้งหมด
           </Link>
         </div>
       </section>
 
       {/* หมวดสินค้า */}
       <section id="products" className="border-t border-zinc-100 bg-zinc-50 py-20">
-        <div className="mx-auto w-full max-w-6xl px-6">
+        <div className="mx-auto w-full max-w-6xl px-4 sm:px-6">
           <h2 className="text-center text-3xl font-semibold tracking-tight">หมวดสินค้า</h2>
           <p className="mt-3 text-center text-zinc-600">สินค้ายอดนิยมที่เราพร้อมผลิตให้คุณ</p>
           <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {Object.entries(PRODUCT_CATEGORIES).map(([key, label]) => (
-              <div
+              <Link
                 key={key}
+                href="/products"
                 className="rounded-2xl border border-zinc-200 bg-white p-6 transition-shadow hover:shadow-md"
               >
                 <div className="text-4xl">{CATEGORY_EMOJI[key] ?? "📦"}</div>
                 <h3 className="mt-4 text-lg font-medium">{label}</h3>
                 <p className="mt-1 text-sm text-zinc-500">รับผลิตคุณภาพสูง ราคาประเมินได้ทันที</p>
-              </div>
+              </Link>
             ))}
           </div>
         </div>
@@ -90,7 +73,7 @@ export default function Home() {
 
       {/* ขั้นตอนสั่งงาน */}
       <section id="steps" className="py-20">
-        <div className="mx-auto w-full max-w-6xl px-6">
+        <div className="mx-auto w-full max-w-6xl px-4 sm:px-6">
           <h2 className="text-center text-3xl font-semibold tracking-tight">ขั้นตอนสั่งงาน</h2>
           <p className="mt-3 text-center text-zinc-600">ตั้งแต่ขอราคา จนถึงส่งของถึงมือ</p>
           <div className="mt-12 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
@@ -107,12 +90,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="mt-auto border-t border-zinc-200 py-8">
-        <div className="mx-auto w-full max-w-6xl px-6 text-center text-sm text-zinc-500">
-          © {new Date().getFullYear()} {APP_NAME} · ระบบบริหารโรงงานผลิตงานพิมพ์และป้าย
-        </div>
-      </footer>
+      <SiteFooter />
     </div>
   );
 }

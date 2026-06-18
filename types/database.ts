@@ -46,6 +46,7 @@ export interface Database {
           is_active?: boolean;
         };
         Update: Partial<Database['public']['Tables']['users']['Insert']>;
+        Relationships: [];
       };
       customers: {
         Row: {
@@ -73,6 +74,7 @@ export interface Database {
           created_by?: string | null;
         };
         Update: Partial<Database['public']['Tables']['customers']['Insert']>;
+        Relationships: [];
       };
       products: {
         Row: {
@@ -104,6 +106,7 @@ export interface Database {
           sort_order?: number;
         };
         Update: Partial<Database['public']['Tables']['products']['Insert']>;
+        Relationships: [];
       };
       pricing_rules: {
         Row: {
@@ -135,6 +138,7 @@ export interface Database {
           sort_order?: number;
         };
         Update: Partial<Database['public']['Tables']['pricing_rules']['Insert']>;
+        Relationships: [];
       };
       quotes: {
         Row: {
@@ -176,6 +180,7 @@ export interface Database {
           rejected_at?: string | null;
         };
         Update: Partial<Database['public']['Tables']['quotes']['Insert']>;
+        Relationships: [];
       };
       quote_items: {
         Row: {
@@ -210,6 +215,7 @@ export interface Database {
           sort_order?: number;
         };
         Update: Partial<Database['public']['Tables']['quote_items']['Insert']>;
+        Relationships: [];
       };
       payments: {
         Row: {
@@ -239,6 +245,7 @@ export interface Database {
           recorded_by?: string | null;
         };
         Update: Partial<Database['public']['Tables']['payments']['Insert']>;
+        Relationships: [];
       };
       production_jobs: {
         Row: {
@@ -268,6 +275,7 @@ export interface Database {
           notes?: string | null;
         };
         Update: Partial<Database['public']['Tables']['production_jobs']['Insert']>;
+        Relationships: [];
       };
       production_logs: {
         Row: {
@@ -288,6 +296,7 @@ export interface Database {
           logged_by?: string | null;
         };
         Update: Partial<Database['public']['Tables']['production_logs']['Insert']>;
+        Relationships: [];
       };
       shipments: {
         Row: {
@@ -319,6 +328,7 @@ export interface Database {
           note?: string | null;
         };
         Update: Partial<Database['public']['Tables']['shipments']['Insert']>;
+        Relationships: [];
       };
     };
     Views: Record<string, never>;

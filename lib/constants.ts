@@ -20,6 +20,24 @@ export const STORAGE_BUCKETS = {
   avatars: 'avatars',
 } as const;
 
+// ข้อจำกัดการอัปโหลดไฟล์งาน (หน้า Instant Quote)
+export const UPLOAD_MAX_BYTES = 20 * 1024 * 1024; // 20MB
+export const UPLOAD_ALLOWED_EXT = ['jpg', 'jpeg', 'png', 'pdf', 'ai', 'psd', 'svg'] as const;
+export const UPLOAD_ALLOWED_MIME = [
+  'image/jpeg',
+  'image/png',
+  'image/svg+xml',
+  'application/pdf',
+  'application/postscript', // .ai / .eps
+  'application/illustrator', // .ai (บางเบราว์เซอร์)
+  'image/vnd.adobe.photoshop', // .psd
+  'application/octet-stream', // .ai/.psd บางครั้งส่งมาแบบนี้ — ตรวจซ้ำด้วยนามสกุล
+] as const;
+export const UPLOAD_ACCEPT_ATTR = '.jpg,.jpeg,.png,.pdf,.ai,.psd,.svg';
+
+// % มัดจำเริ่มต้น
+export const DEFAULT_DEPOSIT_PERCENT = 50;
+
 // ---- หมวดสินค้า ----------------------------------------------------------
 export const PRODUCT_CATEGORIES: Record<ProductCategory, string> = {
   qr_sign: 'ป้าย QR',
