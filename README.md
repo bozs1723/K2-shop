@@ -63,21 +63,25 @@ cp .env.example .env.local
 ```
 
 ### 3. ติดตั้ง Database
-รัน SQL ตามลำดับใน Supabase SQL Editor (ดูรายละเอียดที่ `database/README.md`):
+รัน SQL ตามลำดับใน Supabase SQL Editor:
 ```
 database/migrations/0001_schema.sql
 database/migrations/0002_rls.sql
+database/migrations/0003_storage.sql   # สร้าง bucket artwork
 database/seed.sql
 ```
+(หรือใช้ `database/setup_all.sql` ผ่าน psql)
 
-### 4. สร้าง Storage buckets (สำหรับไฟล์งาน/สลิป)
-สร้าง bucket ใน Supabase Storage: `artwork`, `payment-slips`, `avatars`
-
-### 5. รันโปรเจกต์
+### 4. รันโปรเจกต์
 ```bash
 npm run dev
 ```
 เปิด [http://localhost:3000](http://localhost:3000)
+
+### 5. ตรวจการเชื่อมต่อ (dev เท่านั้น)
+เปิด [http://localhost:3000/debug/supabase](http://localhost:3000/debug/supabase) ให้ขึ้น ✅ ครบ
+
+> 📘 คู่มือ end-to-end แบบละเอียด (สำหรับผู้เริ่มต้น) อยู่ที่ **[`SETUP.md`](./SETUP.md)** — รวม env, SQL, bucket และ checklist ทดสอบทีละขั้น
 
 ## คำสั่งที่ใช้บ่อย
 

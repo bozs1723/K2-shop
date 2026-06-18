@@ -8,10 +8,14 @@ PostgreSQL schema สำหรับรันบน **Supabase**
 database/
 ├── migrations/
 │   ├── 0001_schema.sql   # extensions, enums, ตารางทั้งหมด, indexes, auto-numbering, triggers
-│   └── 0002_rls.sql      # Row Level Security policies
+│   ├── 0002_rls.sql      # Row Level Security policies
+│   └── 0003_storage.sql  # bucket "artwork" + storage policies
 ├── seed.sql              # ข้อมูลตัวอย่าง (สินค้า + กฎราคา Instant Quote)
+├── setup_all.sql         # รวมทุกไฟล์ (psql เท่านั้น — ดู SETUP.md)
 └── README.md
 ```
+
+> วิธีติดตั้ง end-to-end แบบละเอียด (env + SQL + bucket + ทดสอบ) ดูที่ [`/SETUP.md`](../SETUP.md)
 
 ## ตารางหลัก (10 ตาราง)
 
@@ -40,14 +44,13 @@ database/
 
 ### ตัวเลือก A — Supabase SQL Editor
 1. เปิด Supabase Dashboard → SQL Editor
-2. รันไฟล์ตามลำดับ: `0001_schema.sql` → `0002_rls.sql` → `seed.sql`
+2. รันไฟล์ตามลำดับ: `0001_schema.sql` → `0002_rls.sql` → `0003_storage.sql` → `seed.sql`
+   (SQL Editor ใช้ `setup_all.sql` ไม่ได้ เพราะมีคำสั่ง `\i` ของ psql)
 
-### ตัวเลือก B — Supabase CLI
+### ตัวเลือก B — local / psql
 ```bash
-supabase db push          # หรือ
-psql "$DATABASE_URL" -f database/migrations/0001_schema.sql
-psql "$DATABASE_URL" -f database/migrations/0002_rls.sql
-psql "$DATABASE_URL" -f database/seed.sql
+cd database
+psql "$DATABASE_URL" -f setup_all.sql   # รวมทุกไฟล์ในคำสั่งเดียว
 ```
 
 ## Storage buckets
