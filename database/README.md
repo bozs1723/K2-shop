@@ -50,6 +50,13 @@ psql "$DATABASE_URL" -f database/migrations/0002_rls.sql
 psql "$DATABASE_URL" -f database/seed.sql
 ```
 
+## Storage buckets
+
+สร้าง bucket ใน Supabase Storage ก่อนใช้งานหน้า Instant Quote:
+- **`artwork`** — ไฟล์งานที่ลูกค้าอัปโหลด (ใช้โดย `POST /api/upload`); ตั้งเป็น public หากต้องการเปิดดูไฟล์ผ่าน URL ได้ทันที
+- `payment-slips` — หลักฐานการโอน (ใช้ภายหลัง)
+- `avatars` — รูปโปรไฟล์พนักงาน (ใช้ภายหลัง)
+
 ## หมายเหตุเรื่อง RLS
 
 Phase 1 ตั้งค่าแบบพื้นฐาน:
