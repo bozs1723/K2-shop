@@ -1,0 +1,52 @@
+/* K2SIGN Design Tokens — LOCKED ตาม Developer Handoff Final v1.2 (Q4/Q5)
+ * ห้ามแก้ค่าใด ๆ โดยไม่ผ่านอลัน (Creative Director) */
+
+:root {
+  /* Colors — LOCKED ✅Q4 */
+  --color-primary: #E2751A;
+  --color-ink: #262424;
+  --color-light: #F1EDEC;
+  --color-success: #2E9B50;
+  --color-success-soft: #EEF8F1;
+  --color-cream: #FFF3E2;
+  --color-border: #E3E3E3;
+  --color-muted: #6B6B6B;
+  --color-white: #FFFFFF;
+
+  /* Fonts — LOCKED */
+  --font-head: 'Kanit', sans-serif;   /* 700 หัวข้อ / 400 เนื้อหา */
+  --font-body: 'Kanit', sans-serif;
+  --font-button: 'Prompt', sans-serif; /* 500 ปุ่ม/รอง */
+
+  /* Type Scale — Mobile (≤767) + Tablet (768–1023) ✅Q5 */
+  --fs-h1: 36px;        --lh-h1: 1.18;
+  --fs-h2: 28px;        --lh-h2: 1.25;
+  --fs-h3: 21px;        --lh-h3: 1.35;
+  --fs-body-lg: 17px;   --lh-body-lg: 1.6;
+  --fs-body: 16px;      --lh-body: 1.6;
+  --fs-button: 16px;    --lh-button: 1.2;
+  --fs-small: 14px;     --lh-small: 1.5;
+  --fs-caption: 12px;   --lh-caption: 1.5;
+  --fs-price-hero: 32px; --lh-price-hero: 1.2;
+
+  /* Layout */
+  --content-max: 1200px;
+}
+
+/* จอต่ำกว่า 360px: H1 = 32px (token อื่นคงเดิม) */
+@media (max-width: 359px) {
+  :root { --fs-h1: 32px; }
+}
+
+/* Desktop ≥1024 — Type Scale ฝั่ง Desktop ✅Q5 */
+@media (min-width: 1024px) {
+  :root {
+    --fs-h1: 52px;        --lh-h1: 1.15;
+    --fs-h2: 36px;        --lh-h2: 1.25;
+    --fs-h3: 24px;        --lh-h3: 1.35;
+    --fs-body-lg: 18px;   --lh-body-lg: 1.65;
+    --fs-body: 16px;      --lh-body: 1.65;
+    --fs-small: 14px;     --lh-small: 1.55;
+    --fs-price-hero: 38px;
+  }
+}

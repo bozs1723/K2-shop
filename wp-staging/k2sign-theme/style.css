@@ -1,0 +1,10 @@
+/*
+Theme Name: K2SIGN
+Theme URI: https://k2sign.com
+Author: K2SIGN Media Co., Ltd. (Kim — System/Engineering, per Alan's Design Spec Final v1.2)
+Description: Custom theme ตาม K2SIGN Design System — Developer Handoff Package Final v1.2 (LOCKED). สี/ฟอนต์/Type Scale/ลำดับ Section ห้ามแก้โดยไม่ผ่านอลัน
+Version: 0.1.0-staging
+Requires PHP: 7.4
+Text Domain: k2sign
+*/
+/* สไตล์หลักอยู่ใน assets/css/tokens.css + page-acrylic-keychain.css (enqueue ใน functions.php) */

@@ -1,0 +1,20 @@
+# S1.3 — Basic Auth ระดับ server สำหรับ staging.k2sign.com (Z.com / Apache)
+# วางเนื้อหานี้ "เพิ่ม" ไว้บนสุดของ .htaccess ใน document root ของ staging เท่านั้น
+# ห้ามวางบน production เด็ดขาด
+#
+# วิธีสร้าง .htpasswd (รันบนเครื่องที่มี htpasswd หรือใช้ SSH ของ Z.com):
+#   htpasswd -c /path/นอก/document-root/.htpasswd k2staging
+# แล้วแก้ AuthUserFile ด้านล่างให้ชี้ path จริง (ควรอยู่นอก document root)
+
+AuthType Basic
+AuthName "K2SIGN Staging"
+AuthUserFile /home/USERNAME/.htpasswd
+Require valid-user
+
+# ให้ Let's Encrypt ต่ออายุ cert ได้โดยไม่ติดรหัส (ถ้าใช้)
+SetEnvIf Request_URI "^/\.well-known/acme-challenge/" allow_acme
+Order allow,deny
+Allow from env=allow_acme
+Satisfy any
+Require env allow_acme
+Require valid-user
