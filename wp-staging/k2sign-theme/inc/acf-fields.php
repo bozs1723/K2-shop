@@ -1,7 +1,8 @@
 <?php
 /**
  * ACF Field Groups — CPT service (acrylic-keychain) ตาม Handoff §3
- * ลงทะเบียนแบบ local field group (ติดตั้งปลั๊กอิน ACF ก่อน — ฟรีเวอร์ชันพอ ยกเว้น repeater ต้องใช้ ACF Pro)
+ * ลงทะเบียนแบบ local field group — ปลั๊กอินมาตรฐานที่ล็อก: **Secure Custom Fields (SCF)** จาก wordpress.org
+ * (มติ 15 ก.ค. 2026 · API เดียวกับ ACF · ห้ามสลับปลั๊กอินโดยไม่แก้ STAGING-INSTALL-GUIDE.md)
  * หมายเหตุ: ราคาเก็บเป็น JSON textarea ก้อนเดียว (pricing_json) เพื่อกันตัวเลขกระจาย/พิมพ์ผิด
  */
 

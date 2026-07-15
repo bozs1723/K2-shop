@@ -17,7 +17,7 @@
 
 ## S2 — ติดตั้งธีม + ปลั๊กอิน
 1. อัปโหลดโฟลเดอร์ `k2sign-theme/` ไป `wp-content/themes/` แล้ว Activate
-2. ติดตั้งปลั๊กอิน: **ACF Pro** (จำเป็น — ใช้ repeater/gallery) · **Rank Math SEO** · caching/webp ตามนโยบาย
+2. ติดตั้งปลั๊กอิน: **Secure Custom Fields (SCF)** ✅ล็อกเป็นมาตรฐานทั้ง staging+production (มติท่านประธาน 15 ก.ค. 2026 — fork ทางการบน wordpress.org, เปิด repeater/gallery ฟรี, API เดียวกับ ACF · **ห้ามสลับไป ACF/ACF Pro โดยไม่แก้เอกสารนี้**) · **Rank Math SEO** · caching/webp ตามนโยบาย
 3. Settings → Permalinks → Post name แล้ว Save (ให้ rewrite ของ CPT ทำงาน)
 
 ## S3 — สร้างข้อมูล

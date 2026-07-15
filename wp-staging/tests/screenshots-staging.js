@@ -7,7 +7,7 @@ const path = require('path');
 const fs = require('fs');
 
 const URL = process.env.STAGING_URL || 'http://127.0.0.1:8043/services/acrylic-keychain/';
-const AUTH = { username: 'k2staging', password: 'K2preview2026' };
+const AUTH = { username: process.env.BASIC_AUTH_USER || 'k2staging', password: process.env.BASIC_AUTH_PASS || 'K2preview2026' };
 const SHOTS = [
   { name: 'desktop-1440', width: 1440, height: 900 },
   { name: 'tablet-768', width: 768, height: 1024 },

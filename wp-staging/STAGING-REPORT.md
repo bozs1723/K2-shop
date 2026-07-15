@@ -1,5 +1,7 @@
 # K2SIGN Staging Report — /services/acrylic-keychain/
 
+> **อัปเดต v1.1 (2026-07-15):** อัปเกรดเป็นแพ็กเกจ v1.1 — SCF ล็อกเป็นปลั๊กอินมาตรฐาน (มติ 15 ก.ค. 2026, ห้าม ACF Pro ซ้อน) ซึ่งตรงกับที่ staging นี้ใช้อยู่แล้ว · เพิ่ม `tests/scf-compat-check.php` (ผ่านครบ 20 ข้อ) · รัน pricing test ซ้ำผ่าน 112/112 ทั้งสองชั้น · debug.log ว่าง · เพิ่มชุด deploy Z.com: `deploy/ZCOM-DEPLOY.md` + `deploy/zcom-setup.sh` (ทดสอบ end-to-end กับ WordPress สะอาดแล้ว) — ข้อ 5 เดิมด้านล่างถือว่าปิดแล้วตามมตินี้
+
 > ผลการติดตั้งตาม `STAGING-INSTALL-GUIDE.md` (S1–S5) จากแพ็กเกจ `K2SIGN-Staging-Package-v1.zip`
 > วันที่: 2026-07-14 · ติดตั้งโดย Claude Code บน **staging จำลองใน sandbox** (ยังไม่ใช่ Z.com จริง — รอสิทธิ์ hosting ตามตาราง "สิ่งที่ทำแล้ว/ยังไม่ได้ทำ" ในคู่มือ)
 

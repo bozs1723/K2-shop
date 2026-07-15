@@ -19,7 +19,7 @@ const TIERS = 7;
   const browser = await chromium.launch({ executablePath: '/opt/pw-browsers/chromium' });
   // แก้ URL ให้ชี้ staging ตาม STAGING-INSTALL-GUIDE.md S4.2 (+ Basic Auth ของ staging)
   const context = await browser.newContext({ viewport: { width: 390, height: 844 },
-    httpCredentials: { username: 'k2staging', password: 'K2preview2026' } });
+    httpCredentials: { username: process.env.BASIC_AUTH_USER || 'k2staging', password: process.env.BASIC_AUTH_PASS || 'K2preview2026' } });
   const page = await context.newPage();
   const url = process.env.STAGING_URL || 'http://127.0.0.1:8043/services/acrylic-keychain/';
   await page.goto(url, { waitUntil: 'load' });
