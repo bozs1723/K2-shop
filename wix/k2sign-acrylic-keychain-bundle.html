@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- STAGING ONLY — noindex ตาม S1 -->
+<meta name="robots" content="noindex, nofollow">
+<title>พวงกุญแจอะคริลิก พิมพ์ UV รับผลิตตามแบบ - K2SIGN ผู้ผลิตโดยตรง</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&family=Prompt:wght@500&display=swap&subset=thai,latin" rel="stylesheet">
+<style>
+/* K2SIGN Design Tokens — LOCKED ตาม Developer Handoff Final v1.2 (Q4/Q5)
+ * ห้ามแก้ค่าใด ๆ โดยไม่ผ่านอลัน (Creative Director) */
+
+:root {
+  /* Colors — LOCKED ✅Q4 */
+  --color-primary: #E2751A;
+  --color-ink: #262424;
+  --color-light: #F1EDEC;
+  --color-success: #2E9B50;
+  --color-success-soft: #EEF8F1;
+  --color-cream: #FFF3E2;
+  --color-border: #E3E3E3;
+  --color-muted: #6B6B6B;
+  --color-white: #FFFFFF;
+
+  /* Fonts — LOCKED */
+  --font-head: 'Kanit', sans-serif;   /* 700 หัวข้อ / 400 เนื้อหา */
+  --font-body: 'Kanit', sans-serif;
+  --font-button: 'Prompt', sans-serif; /* 500 ปุ่ม/รอง */
+
+  /* Type Scale — Mobile (≤767) + Tablet (768–1023) ✅Q5 */
+  --fs-h1: 36px;        --lh-h1: 1.18;
+  --fs-h2: 28px;        --lh-h2: 1.25;
+  --fs-h3: 21px;        --lh-h3: 1.35;
+  --fs-body-lg: 17px;   --lh-body-lg: 1.6;
+  --fs-body: 16px;      --lh-body: 1.6;
+  --fs-button: 16px;    --lh-button: 1.2;
+  --fs-small: 14px;     --lh-small: 1.5;
+  --fs-caption: 12px;   --lh-caption: 1.5;
+  --fs-price-hero: 32px; --lh-price-hero: 1.2;
+
+  /* Layout */
+  --content-max: 1200px;
+}
+
+/* จอต่ำกว่า 360px: H1 = 32px (token อื่นคงเดิม) */
+@media (max-width: 359px) {
+  :root { --fs-h1: 32px; }
+}
+
+/* Desktop ≥1024 — Type Scale ฝั่ง Desktop ✅Q5 */
+@media (min-width: 1024px) {
+  :root {
+    --fs-h1: 52px;        --lh-h1: 1.15;
+    --fs-h2: 36px;        --lh-h2: 1.25;
+    --fs-h3: 24px;        --lh-h3: 1.35;
+    --fs-body-lg: 18px;   --lh-body-lg: 1.65;
+    --fs-body: 16px;      --lh-body: 1.65;
+    --fs-small: 14px;     --lh-small: 1.55;
+    --fs-price-hero: 38px;
+  }
+}
+
+</style>
+<style>
+/* K2SIGN — /services/acrylic-keychain/ styles
+ * ตาม Developer Handoff Final v1.2 — ลำดับ section C1→C11 LOCKED
+ * Breakpoints LOCKED: 0–767 Mobile · 768–1023 Tablet Hybrid · 1024+ Desktop · content max 1200px */
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: var(--fs-body);
+  line-height: var(--lh-body);
+  color: var(--color-ink);
+  background: var(--color-white);
+}
+img { max-width: 100%; display: block; }
+a { color: inherit; text-decoration: none; }
+.wrap { max-width: var(--content-max); margin: 0 auto; padding: 0 20px; }
+h1 { font: 700 var(--fs-h1)/var(--lh-h1) var(--font-head); }
+h2 { font: 700 var(--fs-h2)/var(--lh-h2) var(--font-head); }
+h3 { font: 700 var(--fs-h3)/var(--lh-h3) var(--font-head); }
+.body-lg { font-size: var(--fs-body-lg); line-height: var(--lh-body-lg); }
+.small { font-size: var(--fs-small); line-height: var(--lh-small); }
+.caption { font-size: var(--fs-caption); line-height: var(--lh-caption); color: var(--color-muted); }
+section { padding: 48px 0; }
+@media (min-width: 1024px) { section { padding: 72px 0; } }
+.sec-head { text-align: center; margin-bottom: 32px; }
+
+/* ---------- Buttons (G4/G5) ---------- */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+  font: 500 var(--fs-button)/var(--lh-button) var(--font-button);
+  border-radius: 10px; padding: 14px 24px; min-height: 48px;
+  cursor: pointer; border: 2px solid transparent; text-align: center;
+}
+.btn-primary { background: var(--color-primary); color: var(--color-white); }
+.btn-secondary { background: var(--color-white); color: var(--color-primary); border-color: var(--color-primary); }
+
+/* ---------- Badge ยอดนิยม (G6) ---------- */
+.badge-popular {
+  display: inline-block; background: var(--color-success); color: var(--color-white);
+  font: 500 var(--fs-caption)/1 var(--font-button);
+  padding: 4px 10px; border-radius: 999px;
+}
+
+/* ---------- G1 Header ---------- */
+.site-header {
+  position: sticky; top: 0; z-index: 50;
+  background: var(--color-white); border-bottom: 1px solid var(--color-border);
+}
+.site-header .wrap { display: flex; align-items: center; gap: 24px; height: 68px; }
+.logo { font: 700 24px/1 var(--font-head); color: var(--color-ink); }
+.logo em { color: var(--color-primary); font-style: normal; }
+.main-nav { display: none; }
+.header-cta { margin-left: auto; padding: 10px 18px; min-height: 44px; }
+.nav-toggle {
+  margin-left: 0; background: none; border: 0; cursor: pointer;
+  width: 44px; height: 44px; display: grid; place-items: center;
+}
+.nav-toggle span { display: block; width: 24px; height: 2px; background: var(--color-ink); position: relative; }
+.nav-toggle span::before, .nav-toggle span::after {
+  content: ""; position: absolute; left: 0; width: 24px; height: 2px; background: var(--color-ink);
+}
+.nav-toggle span::before { top: -7px; } .nav-toggle span::after { top: 7px; }
+.mobile-menu { display: none; background: var(--color-white); border-bottom: 1px solid var(--color-border); }
+.mobile-menu.open { display: block; }
+.mobile-menu a { display: block; padding: 14px 20px; border-top: 1px solid var(--color-border); font: 500 var(--fs-button)/1.2 var(--font-button); }
+/* Nav: hamburger < 960px · เมนูเต็ม ≥ 960 (Tablet spec: hamburger เมื่อต่ำกว่า 960) */
+@media (min-width: 960px) {
+  .main-nav { display: flex; gap: 28px; }
+  .main-nav a { font: 500 15px/1.2 var(--font-button); color: var(--color-ink); }
+  .main-nav a:hover { color: var(--color-primary); }
+  .nav-toggle, .mobile-menu { display: none !important; }
+}
+
+/* ---------- G2 Mobile Sticky Bottom CTA (✅Q7) ---------- */
+.sticky-cta {
+  position: fixed; bottom: 0; left: 0; right: 0; z-index: 60;
+  display: grid; grid-template-columns: 1fr 1fr 1.4fr; gap: 8px;
+  background: var(--color-white); border-top: 1px solid var(--color-border);
+  padding: 10px 12px calc(10px + env(safe-area-inset-bottom));
+}
+.sticky-cta .btn { padding: 10px 8px; min-height: 48px; font-size: 15px; }
+.sticky-cta .btn-line { background: var(--color-white); color: var(--color-ink); border: 2px solid var(--color-border); }
+.sticky-cta .btn-tel { background: var(--color-white); color: var(--color-ink); border: 2px solid var(--color-border); }
+body { padding-bottom: 76px; }
+@media (min-width: 1024px) {
+  .sticky-cta { display: none; }
+  body { padding-bottom: 0; }
+}
+
+/* ---------- C1 Hero ---------- */
+.hero { background: var(--color-cream); padding: 40px 0 48px; }
+.hero .wrap { display: grid; gap: 28px; }
+.hero-media { order: -1; } /* Mobile: ภาพขวาบน = ภาพก่อนข้อความ */
+.hero-img-ph {
+  aspect-ratio: 4/3; border-radius: 16px; border: 2px dashed var(--color-primary);
+  background: var(--color-white); display: grid; place-items: center; text-align: center;
+  color: var(--color-muted); padding: 20px; font-size: var(--fs-small);
+}
+.hero h1 { margin-bottom: 12px; }
+.hero-sub { color: var(--color-ink); margin-bottom: 16px; }
+.usp { list-style: none; margin-bottom: 20px; display: grid; gap: 8px; }
+.usp li { padding-left: 28px; position: relative; }
+.usp li::before { content: "✓"; position: absolute; left: 0; color: var(--color-success); font-weight: 700; }
+.price-hero { font: 700 var(--fs-price-hero)/var(--lh-price-hero) var(--font-head); color: var(--color-primary); }
+.price-hero small { font: 400 var(--fs-small)/var(--lh-small) var(--font-body); color: var(--color-muted); display: block; margin-top: 4px; }
+.hero-cta-row { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 20px; }
+@media (min-width: 768px) { /* Tablet: Hero 2 คอลัมน์ (LOCKED) */
+  .hero .wrap { grid-template-columns: 1.1fr 1fr; align-items: center; }
+  .hero-media { order: 2; }
+}
+
+/* ---------- C2 Trust Icons ---------- */
+.trust-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; } /* Mobile 2 คอลัมน์ ✅Q6 */
+.trust-item {
+  background: var(--color-white); border: 1px solid var(--color-border); border-radius: 12px;
+  padding: 18px 14px; text-align: center;
+}
+.trust-item .ic { font-size: 28px; line-height: 1; margin-bottom: 10px; color: var(--color-primary); }
+.trust-item p { font-size: var(--fs-small); line-height: var(--lh-small); font-weight: 400; }
+@media (min-width: 768px) and (max-width: 1023px) { /* Tablet 3+2 (LOCKED) */
+  .trust-grid { grid-template-columns: repeat(6, 1fr); }
+  .trust-item { grid-column: span 2; }
+  .trust-item:nth-child(4) { grid-column: 2 / span 2; }
+  .trust-item:nth-child(5) { grid-column: 4 / span 2; }
+}
+@media (min-width: 1024px) { .trust-grid { grid-template-columns: repeat(5, 1fr); } }
+
+/* ---------- C3/C4 Pricing ---------- */
+.sec-pricing { background: var(--color-light); }
+/* Desktop: ตารางเต็ม */
+.price-tables { display: none; }
+.price-table-card { background: var(--color-white); border-radius: 14px; padding: 24px; overflow-x: auto; }
+.price-table-card + .price-table-card { margin-top: 24px; }
+table.k2-price { border-collapse: collapse; width: 100%; min-width: 720px; }
+table.k2-price th, table.k2-price td {
+  border: 1px solid var(--color-border); padding: 10px 8px; text-align: center; font-size: var(--fs-small);
+}
+table.k2-price thead th { background: var(--color-ink); color: var(--color-white); font: 500 var(--fs-small)/1.3 var(--font-button); }
+table.k2-price td.size-col, table.k2-price th.size-col { background: var(--color-cream); font-weight: 700; white-space: nowrap; }
+table.k2-price tr.row-500 td {
+  background: var(--color-success-soft); color: var(--color-success); font-weight: 700;
+}
+.price-note { margin-top: 14px; color: var(--color-muted); font-size: var(--fs-small); line-height: var(--lh-small); }
+@media (min-width: 1024px) {
+  .price-tables { display: block; }
+  #k2-pricing-selector { display: none; } /* Desktop = ตารางเต็ม (LOCKED) */
+}
+
+/* Mobile/Tablet: Pricing Selector */
+#k2-pricing-selector { background: var(--color-white); border-radius: 14px; padding: 20px 16px; }
+.k2-ps-label { font: 500 var(--fs-small)/1.3 var(--font-button); color: var(--color-muted); margin-bottom: 10px; }
+.k2-ps-sizes { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin-bottom: 8px; }
+.k2-ps-sizes button {
+  position: relative; min-height: 48px; border-radius: 10px; cursor: pointer;
+  border: 2px solid var(--color-border); background: var(--color-white);
+  font: 500 var(--fs-button)/1.2 var(--font-button); color: var(--color-ink);
+}
+.k2-ps-sizes button.on { border-color: var(--color-primary); background: var(--color-cream); color: var(--color-primary); }
+.k2-ps-sizes .badge-popular { position: absolute; top: -9px; right: -4px; padding: 2px 7px; font-size: 10px; }
+.k2-ps-sides { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin: 16px 0; }
+.k2-ps-sides button {
+  min-height: 48px; border-radius: 10px; cursor: pointer;
+  border: 2px solid var(--color-border); background: var(--color-white);
+  font: 500 15px/1.25 var(--font-button); color: var(--color-ink); padding: 6px 8px;
+}
+.k2-ps-sides button.on { border-color: var(--color-primary); background: var(--color-primary); color: var(--color-white); }
+.k2-ps-sides .sur { display: block; font-size: var(--fs-caption); font-weight: 400; }
+.k2-ps-title { font: 700 var(--fs-h3)/var(--lh-h3) var(--font-head); margin-bottom: 12px; }
+.k2-ps-row {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 12px 4px; border-bottom: 1px solid var(--color-border);
+}
+.k2-ps-row strong { color: var(--color-primary); font: 700 18px/1.2 var(--font-head); }
+.k2-ps-500 {
+  margin-top: 14px; background: var(--color-success-soft); color: var(--color-success);
+  border-radius: 10px; padding: 14px; text-align: center; font-weight: 700; display: block;
+}
+
+/* ---------- C5 Accessories ---------- */
+.acc-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; }
+.acc-card {
+  background: var(--color-white); border: 1px solid var(--color-border); border-radius: 12px;
+  padding: 16px 14px; text-align: center;
+}
+.acc-card .img-ph {
+  aspect-ratio: 1; border-radius: 10px; background: var(--color-light);
+  display: grid; place-items: center; color: var(--color-muted);
+  font-size: var(--fs-caption); margin-bottom: 12px; padding: 8px; text-align: center;
+}
+.acc-card h3 { font-size: var(--fs-body); margin-bottom: 6px; }
+.acc-card .add { color: var(--color-primary); font: 700 var(--fs-body)/1.2 var(--font-head); }
+.acc-card .add.free { color: var(--color-success); }
+@media (min-width: 768px) and (max-width: 1023px) { /* Tablet 3+2 (LOCKED) */
+  .acc-grid { grid-template-columns: repeat(6, 1fr); }
+  .acc-card { grid-column: span 2; }
+  .acc-card:nth-child(4) { grid-column: 2 / span 2; }
+  .acc-card:nth-child(5) { grid-column: 4 / span 2; }
+}
+@media (min-width: 1024px) { .acc-grid { grid-template-columns: repeat(5, 1fr); } }
+
+/* ---------- C6 Feature Cards ---------- */
+.sec-features { background: var(--color-cream); }
+.feature-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; } /* Mobile 2 คอลัมน์ ✅Q6 */
+.feature-card { background: var(--color-white); border-radius: 12px; padding: 20px 16px; }
+.feature-card h3 { font-size: var(--fs-body-lg); margin-bottom: 8px; }
+.feature-card p { font-size: var(--fs-small); line-height: var(--lh-small); color: var(--color-muted); }
+.feature-card a { color: var(--color-primary); font-weight: 500; }
+@media (min-width: 1024px) { .feature-grid { grid-template-columns: repeat(4, 1fr); } }
+
+/* ---------- C7 Portfolio ---------- */
+.pf-grid { display: grid; grid-auto-flow: column; grid-auto-columns: 72%; gap: 14px; overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: 8px; }
+.pf-item {
+  aspect-ratio: 1; border-radius: 12px; background: var(--color-light);
+  display: grid; place-items: center; color: var(--color-muted); font-size: var(--fs-caption);
+  scroll-snap-align: start; text-align: center; padding: 10px;
+}
+.pf-more { text-align: center; margin-top: 24px; }
+@media (min-width: 768px) { /* Tablet grid 3 คอลัมน์ (LOCKED) */
+  .pf-grid { grid-auto-flow: row; grid-template-columns: repeat(3, 1fr); overflow: visible; }
+}
+@media (min-width: 1024px) { .pf-grid { grid-template-columns: repeat(3, 1fr); } }
+
+/* ---------- C8 Volume ---------- */
+.sec-volume { background: var(--color-light); }
+.vol-grid { display: grid; gap: 14px; }
+.vol-card { background: var(--color-white); border-radius: 12px; padding: 24px 20px; }
+.vol-card h3 { margin-bottom: 8px; }
+.vol-card.bulk { background: var(--color-success-soft); }
+.vol-card.bulk h3 { color: var(--color-success); }
+.vol-card .btn { margin-top: 14px; }
+@media (min-width: 768px) { .vol-grid { grid-template-columns: repeat(3, 1fr); } }
+
+/* ---------- C9 Steps ---------- */
+.steps-grid { display: grid; gap: 14px; }
+.step-card { border: 1px solid var(--color-border); border-radius: 12px; padding: 20px 16px; background: var(--color-white); }
+.step-card .num {
+  width: 36px; height: 36px; border-radius: 50%; background: var(--color-primary); color: var(--color-white);
+  display: grid; place-items: center; font: 700 16px/1 var(--font-head); margin-bottom: 12px;
+}
+.step-card h3 { font-size: var(--fs-body-lg); margin-bottom: 6px; }
+.step-card p { font-size: var(--fs-small); color: var(--color-muted); }
+@media (min-width: 768px) and (max-width: 1023px) { .steps-grid { grid-template-columns: 1fr 1fr; } } /* Tablet 2×2 (LOCKED) */
+@media (min-width: 1024px) { .steps-grid { grid-template-columns: repeat(4, 1fr); } }
+
+/* ---------- C10 Accordion (G8) ---------- */
+.faq-cols { display: grid; gap: 12px; }
+details.k2-acc { border: 1px solid var(--color-border); border-radius: 12px; background: var(--color-white); }
+details.k2-acc summary {
+  cursor: pointer; list-style: none; padding: 16px 44px 16px 18px; position: relative;
+  font: 500 var(--fs-body)/1.4 var(--font-button);
+}
+details.k2-acc summary::-webkit-details-marker { display: none; }
+details.k2-acc summary::after {
+  content: "+"; position: absolute; right: 18px; top: 50%; transform: translateY(-50%);
+  color: var(--color-primary); font: 700 22px/1 var(--font-head);
+}
+details.k2-acc[open] summary::after { content: "–"; }
+details.k2-acc .acc-body { padding: 0 18px 18px; color: var(--color-muted); font-size: var(--fs-small); line-height: var(--lh-small); }
+@media (min-width: 1024px) { .faq-cols { grid-template-columns: 1fr 1fr; align-items: start; } } /* ✅Q10 Desktop 2 คอลัมน์ */
+
+/* ---------- C11 CTA ปิดท้าย ---------- */
+.sec-cta { background: var(--color-ink); color: var(--color-white); text-align: center; }
+.sec-cta h2 { margin-bottom: 10px; }
+.sec-cta .sub { color: var(--color-light); margin-bottom: 24px; }
+.cta-row { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; }
+.cta-row .btn-ghost { border-color: var(--color-white); color: var(--color-white); background: transparent; }
+.cta-points { margin-top: 20px; color: var(--color-light); font-size: var(--fs-small); }
+
+/* ---------- G3 Footer ---------- */
+.site-footer { background: var(--color-light); padding: 32px 0; }
+.site-footer .wrap { display: grid; gap: 16px; }
+.site-footer nav { display: flex; flex-wrap: wrap; gap: 16px; font-size: var(--fs-small); }
+.site-footer .contact { font-size: var(--fs-small); color: var(--color-muted); display: grid; gap: 4px; }
+@media (min-width: 768px) { .site-footer .wrap { grid-template-columns: 1fr 1fr; align-items: start; } }
+
+</style>
+</head>
+<body>
+
+<!-- ========== G1 Header ========== -->
+<header class="site-header">
+  <div class="wrap">
+    <button class="nav-toggle" aria-label="เมนู" onclick="document.querySelector('.mobile-menu').classList.toggle('open')"><span></span></button>
+    <a class="logo" href="/">K2<em>SIGN</em></a>
+    <nav class="main-nav">
+      <a href="/">หน้าแรก</a>
+      <a href="/services/">บริการ ▾</a>
+      <a href="/portfolio/">ผลงาน</a>
+      <a href="/pricing/">ราคา</a>
+      <a href="/blog/">บทความ</a>
+      <a href="/contact/">ติดต่อเรา</a>
+    </nav>
+    <a class="btn btn-primary header-cta" href="/quote/">ส่งแบบประเมินราคา</a>
+  </div>
+  <nav class="mobile-menu">
+    <a href="/">หน้าแรก</a><a href="/services/">บริการ</a><a href="/portfolio/">ผลงาน</a>
+    <a href="/pricing/">ราคา</a><a href="/blog/">บทความ</a><a href="/contact/">ติดต่อเรา</a>
+  </nav>
+</header>
+
+<main>
+
+<!-- ========== C1 Hero ========== -->
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-text">
+      <h1>พวงกุญแจอะคริลิก พิมพ์ UV Flatbed รับผลิตตามแบบ ตั้งแต่ชิ้นเดียวถึงหลักหมื่น</h1>
+      <p class="hero-sub body-lg">พิมพ์คมชัด สีสดสวย ไดคัทตามแบบ เริ่มต้น 1 ชิ้น</p>
+      <!-- USP 4 ข้อ: [รอยืนยันข้อความตาม mockup — ชุดนี้ร่างจากข้อความที่ล็อกแล้ว ให้อลันตรวจใน Design QA] -->
+      <ul class="usp">
+        <li>พิมพ์ UV Flatbed สีคมชัด ติดทนบนอะคริลิก</li>
+        <li>ไดคัทตามแบบทุกสไตล์</li>
+        <li>เริ่มต้นสั่งได้ตั้งแต่ 1 ชิ้น</li>
+        <li>โซ่ไข่ปลาสีเงินฟรีทุกชิ้น</li>
+      </ul>
+      <div class="price-hero">เริ่มต้น 16 บาท/ชิ้น*
+        <small>*ขนาด 3 ซม. จำนวน 300–500 ชิ้น พิมพ์ 1 ด้าน พร้อมโซ่ไข่ปลาสีเงิน</small>
+      </div>
+      <div class="hero-cta-row">
+        <a class="btn btn-primary" href="/quote/">ส่งแบบ / ขอใบเสนอราคา</a>
+        <a class="btn btn-secondary" href="#pricing">ดูตารางราคา</a>
+      </div>
+    </div>
+    <div class="hero-media">
+      <!-- ✅Q2: Placeholder เท่านั้น — รอภาพจริงจากคลัง Drive (ชิ้นงานเดี่ยวถือในมือ composition 3) อลันยืนยันภาพสุดท้าย · ห้ามใช้ภาพ generated -->
+      <div class="hero-img-ph">[Hero Placeholder]<br>ภาพผลงานจริง: ชิ้นงานเดี่ยวถือในมือ<br>(รออลันยืนยัน candidate จากคลัง Drive)</div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== C2 Trust Icons ========== -->
+<section class="sec-trust">
+  <div class="wrap">
+    <div class="trust-grid">
+      <div class="trust-item"><div class="ic">🏭</div><p>ผลิตเองควบคุมทุกงาน</p></div>
+      <div class="trust-item"><div class="ic">1️⃣</div><p>เริ่มชิ้นเดียวถึงหลักหมื่น</p></div>
+      <div class="trust-item"><div class="ic">✂️</div><p>ไดคัทตามแบบทุกสไตล์</p></div>
+      <div class="trust-item"><div class="ic">⛓️</div><p>โซ่ไข่ปลาสีเงินฟรี</p></div>
+      <div class="trust-item"><div class="ic">🚚</div><p>ผลิตประมาณ 7 วัน*</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== C3 + C4 Pricing ========== -->
+<section class="sec-pricing" id="pricing">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>ราคาพวงกุญแจอะคริลิก</h2>
+      <p class="small" style="color:var(--color-muted)">ราคาต่อชิ้น (บาท) ตามขนาดและจำนวน</p>
+    </div>
+
+    <!-- ราคา LOCKED — source of truth เดียว ห้าม hardcode ใน template -->
+    <script type="application/json" id="k2-pricing-data">{
+      "currency": "THB",
+      "sizes_cm": [3,4,5,6,7,8,9,10],
+      "popular_size": 5,
+      "qty_tiers": ["1-9","10-19","20-49","50-99","100-199","200-299","300-500"],
+      "price_matrix_1side": {
+        "3":[80,39,35,29,19,17,16], "4":[85,44,40,34,24,22,20],
+        "5":[90,49,45,39,29,27,25], "6":[95,54,50,44,34,31,29],
+        "7":[100,59,55,49,39,36,34], "8":[130,64,60,54,44,41,39],
+        "9":[140,69,65,59,49,46,43], "10":[150,74,70,64,54,51,47]
+      },
+      "two_side_surcharge": {"3":5,"4":5,"5":10,"6":10,"7":15,"8":15,"9":20,"10":20},
+      "over_500_label": "มากกว่า 500 ชิ้น ติดต่อรับราคาส่งพิเศษ",
+      "price_note": "ราคาเริ่มต้น อาจเปลี่ยนแปลงตามความซับซ้อนของแบบ ขนาดจริง งานพิมพ์ และอะไหล่ที่เลือก · ระยะเวลาผลิตประมาณ 7 วัน ขึ้นอยู่กับจำนวน"
+    }</script>
+
+    <!-- Desktop ≥1024: ตารางเต็ม 8×7 + ตารางเพิ่ม 2 ด้าน (สร้างจาก JSON ด้วย JS — ไม่ hardcode) -->
+    <div class="price-tables">
+      <div class="price-table-card">
+        <h3 style="margin-bottom:14px">ราคาพิมพ์ 1 ด้าน (บาท/ชิ้น)</h3>
+        <div id="k2-table-1side"></div>
+      </div>
+      <div class="price-table-card">
+        <h3 style="margin-bottom:14px">เพิ่มพิมพ์ 2 ด้าน (บาท/ชิ้น ตามขนาด)</h3>
+        <div id="k2-table-2side"></div>
+      </div>
+      <p class="price-note" id="k2-note-desktop"></p>
+    </div>
+
+    <!-- Mobile/Tablet: Pricing Selector (เลือกขนาดก่อน → ราคาตามช่วง → toggle 1/2 ด้าน) -->
+    <div id="k2-pricing-selector">
+      <p class="k2-ps-label">เลือกขนาด (ซม.)</p>
+      <div class="k2-ps-sizes">
+        <button data-size="3">3 ซม.</button>
+        <button data-size="4">4 ซม.</button>
+        <button data-size="5">5 ซม.<span class="badge-popular">ยอดนิยม</span></button>
+        <button data-size="6">6 ซม.</button>
+        <button data-size="7">7 ซม.</button>
+        <button data-size="8">8 ซม.</button>
+        <button data-size="9">9 ซม.</button>
+        <button data-size="10">10 ซม.</button>
+      </div>
+      <div class="k2-ps-sides">
+        <button data-side="1">พิมพ์ 1 ด้าน</button>
+        <button data-side="2">พิมพ์ 2 ด้าน <span class="sur"></span></button>
+      </div>
+      <h3 class="k2-ps-title"></h3>
+      <div class="k2-ps-rows"></div>
+      <a class="k2-ps-500" href="/quote/">มากกว่า 500 ชิ้น ติดต่อรับราคาส่งพิเศษ</a>
+      <p class="price-note" id="k2-note-mobile"></p>
+    </div>
+  </div>
+</section>
+
+<!-- ========== C5 อุปกรณ์และตัวเลือก ========== -->
+<section class="sec-acc">
+  <div class="wrap">
+    <div class="sec-head"><h2>อุปกรณ์และตัวเลือก (ห่วง / โซ่ / ตะขอ)</h2></div>
+    <div class="acc-grid">
+      <div class="acc-card"><div class="img-ph">[ภาพจริงจากคลัง Drive]</div><h3>โซ่ไข่ปลาสีเงิน</h3><div class="add free">ฟรี</div></div>
+      <div class="acc-card"><div class="img-ph">[ภาพจริงจากคลัง Drive]</div><h3>โซ่ไข่ปลาสีต่าง ๆ</h3><div class="add">+2 บาท</div></div>
+      <div class="acc-card"><div class="img-ph">[ภาพจริงจากคลัง Drive]</div><h3>ห่วงวงกลมพร้อมโซ่</h3><div class="add">+3 บาท</div></div>
+      <div class="acc-card"><div class="img-ph">[ภาพจริงจากคลัง Drive]</div><h3>ตะขอแบบ A</h3><div class="add">+6 บาท</div></div>
+      <div class="acc-card"><div class="img-ph">[ภาพจริงจากคลัง Drive]</div><h3>ตะขอแบบ B</h3><div class="add">+8 บาท</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== C6 คุณสมบัติย่อย ========== -->
+<section class="sec-features">
+  <div class="wrap">
+    <div class="sec-head"><h2>จุดเด่นพวงกุญแจอะคริลิก K2SIGN</h2></div>
+    <div class="feature-grid">
+      <div class="feature-card"><h3>ขนาดยอดนิยม 3–6 ซม.</h3><p>เลือกได้ตั้งแต่ 3–10 ซม. ขนาดที่ลูกค้าสั่งมากที่สุดคือ 3–6 ซม.</p></div>
+      <div class="feature-card"><h3>ไดคัทตามแบบ</h3><p>ตัดขอบตามรูปทรงของแบบทุกสไตล์ โลโก้ การ์ตูน ตัวอักษร</p></div>
+      <div class="feature-card"><h3>พิมพ์ UV Flatbed</h3><p>สีคมชัด รายละเอียดครบ พิมพ์ได้ทั้ง 1 ด้านและ 2 ด้าน</p></div>
+      <div class="feature-card"><h3>วัสดุอะคริลิก</h3><p>อะคริลิกใสคุณภาพ <a href="#accordion">อ่านรายละเอียดวัสดุใน FAQ</a></p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== C7 ผลงานจริง ========== -->
+<section class="sec-portfolio">
+  <div class="wrap">
+    <div class="sec-head"><h2>ผลงานพวงกุญแจอะคริลิกของเรา</h2></div>
+    <div class="pf-grid">
+      <div class="pf-item">[ภาพผลงานจริง 1<br>จากชุดแนะนำของอลัน]</div>
+      <div class="pf-item">[ภาพผลงานจริง 2]</div>
+      <div class="pf-item">[ภาพผลงานจริง 3]</div>
+      <div class="pf-item">[ภาพผลงานจริง 4]</div>
+      <div class="pf-item">[ภาพผลงานจริง 5]</div>
+      <div class="pf-item">[ภาพผลงานจริง 6]</div>
+    </div>
+    <div class="pf-more"><a class="btn btn-secondary" href="/portfolio/">ดูผลงานทั้งหมด</a></div>
+  </div>
+</section>
+
+<!-- ========== C8 งานจำนวนน้อย & จำนวนมาก ========== -->
+<section class="sec-volume">
+  <div class="wrap">
+    <div class="sec-head"><h2>สั่งน้อยก็ได้ สั่งมากก็คุ้ม</h2></div>
+    <div class="vol-grid">
+      <div class="vol-card">
+        <h3>ชิ้นเดียวก็ทำได้</h3>
+        <p class="small">ขนาด 3 ซม. ช่วง 1–9 ชิ้น ราคา 80 บาท/ชิ้น เหมาะกับงานทดลองแบบ ของขวัญ ชิ้นเดียวในโลก</p>
+      </div>
+      <div class="vol-card">
+        <h3>งานองค์กร / โปรโมชั่น</h3>
+        <p class="small">ผลิตจำนวนมากสำหรับของพรีเมียม แจกงานอีเวนต์ สินค้าที่ระลึก ราคาลดตามจำนวน</p>
+      </div>
+      <div class="vol-card bulk">
+        <h3>มากกว่า 500 ชิ้น</h3>
+        <p class="small">ติดต่อรับราคาส่งพิเศษ พร้อมทีมดูแลงานผลิตโดยตรง</p>
+        <a class="btn btn-primary" href="/quote/">ขอราคาส่งพิเศษ</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== C9 ขั้นตอนสั่งผลิต ========== -->
+<section class="sec-steps">
+  <div class="wrap">
+    <div class="sec-head"><h2>ขั้นตอนสั่งผลิต 4 ขั้นตอน</h2></div>
+    <div class="steps-grid">
+      <div class="step-card"><div class="num">1</div><h3>ส่งแบบ / แจ้งรายละเอียด</h3><p>ส่งไฟล์แบบ ขนาด จำนวน และอะไหล่ที่ต้องการ</p></div>
+      <div class="step-card"><div class="num">2</div><h3>ยืนยันราคาและเงื่อนไข</h3><p>รับใบเสนอราคา ยืนยันแบบก่อนเริ่มผลิต</p></div>
+      <div class="step-card"><div class="num">3</div><h3>ผลิตงาน</h3><p>พิมพ์ UV Flatbed + ไดคัทตามแบบ พร้อมตรวจคุณภาพ</p></div>
+      <div class="step-card"><div class="num">4</div><h3>จัดส่ง</h3><p>แพ็กและจัดส่งถึงมือ ตามรอบผลิตประมาณ 7 วัน*</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== C10 Accordion ========== -->
+<!-- หมายเหตุ: กลุ่ม "วิธีเตรียมไฟล์" และ "การแพ็กและการจัดส่ง" ซ่อนไว้ตามกติกา Content Entry Guide ข้อ 5
+     (รอ Data Checklist §G ข้อ 5–14 จากฝ่ายผลิต — empty state = ซ่อน section) -->
+<section class="sec-accordion" id="accordion">
+  <div class="wrap">
+    <div class="sec-head"><h2>คำถามที่พบบ่อย</h2></div>
+    <div class="faq-cols">
+      <details class="k2-acc"><summary>สั่งขั้นต่ำกี่ชิ้น?</summary>
+        <div class="acc-body">เริ่มต้นสั่งได้ตั้งแต่ 1 ชิ้น — ขนาด 3 ซม. ช่วง 1–9 ชิ้น ราคา 80 บาท/ชิ้น</div></details>
+      <details class="k2-acc"><summary>ใช้ไฟล์อะไรได้บ้าง?</summary>
+        <div class="acc-body">[รอฝ่ายผลิตยืนยัน — Data Checklist §G · ต้องมีคำตอบก่อน publish]</div></details>
+      <details class="k2-acc"><summary>ใช้เวลาผลิตกี่วัน?</summary>
+        <div class="acc-body">ระยะเวลาผลิตประมาณ 7 วัน ขึ้นอยู่กับจำนวน</div></details>
+      <details class="k2-acc"><summary>หลายแบบหลายลายทำได้ไหม?</summary>
+        <div class="acc-body">[รอฝ่ายผลิตยืนยัน — Data Checklist §G · ต้องมีคำตอบก่อน publish]</div></details>
+      <details class="k2-acc"><summary>พิมพ์ 2 ด้านได้ไหม?</summary>
+        <div class="acc-body">ได้ — มีค่าพิมพ์เพิ่ม +5 ถึง +20 บาท/ชิ้น ตามขนาด (ดูตารางราคา)</div></details>
+      <details class="k2-acc"><summary>ราคาเปลี่ยนแปลงไหม?</summary>
+        <div class="acc-body">ราคาเริ่มต้น อาจเปลี่ยนแปลงตามความซับซ้อนของแบบ ขนาดจริง งานพิมพ์ และอะไหล่ที่เลือก</div></details>
+    </div>
+    <div style="margin-top:20px">
+      <details class="k2-acc"><summary>ระยะเวลาผลิตและจัดส่ง</summary>
+        <div class="acc-body">ระยะเวลาผลิตประมาณ 7 วัน ขึ้นอยู่กับจำนวน [รายละเอียดการจัดส่ง: รอฝ่ายผลิตยืนยัน]</div></details>
+      <details class="k2-acc" style="margin-top:12px"><summary>หมายเหตุและเงื่อนไข</summary>
+        <div class="acc-body">ราคาเริ่มต้น อาจเปลี่ยนแปลงตามความซับซ้อนของแบบ ขนาดจริง งานพิมพ์ และอะไหล่ที่เลือก · ระยะเวลาผลิตประมาณ 7 วัน ขึ้นอยู่กับจำนวน</div></details>
+    </div>
+  </div>
+</section>
+
+<!-- ========== C11 CTA ปิดท้าย ========== -->
+<section class="sec-cta">
+  <div class="wrap">
+    <h2>สั่งผลิตพวงกุญแจอะคริลิกกับ K2SIGN</h2>
+    <p class="sub body-lg">ผู้ผลิตโดยตรง เริ่มชิ้นเดียวถึงหลักหมื่น พิมพ์ UV Flatbed ไดคัทตามแบบ</p>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="/quote/" data-event="start_lead_form">ส่งแบบ / ขอใบเสนอราคา</a>
+      <a class="btn btn-ghost" href="https://line.me/R/ti/p/@k2sign" data-event="click_line">LINE @k2sign</a>
+      <a class="btn btn-ghost" href="tel:0659895887" data-event="click_phone">โทร 065-989-5887</a>
+    </div>
+    <p class="cta-points">เริ่มต้น 16 บาท/ชิ้น* · โซ่ไข่ปลาสีเงินฟรี · ผลิตประมาณ 7 วัน*</p>
+  </div>
+</section>
+
+</main>
+
+<!-- ========== G3 Footer ========== -->
+<footer class="site-footer">
+  <div class="wrap">
+    <nav>
+      <a href="/">หน้าแรก</a><a href="/services/">บริการ</a><a href="/portfolio/">ผลงาน</a>
+      <a href="/pricing/">ราคา</a><a href="/contact/">ติดต่อเรา</a>
+    </nav>
+    <div class="contact">
+      <span>LINE: @k2sign</span>
+      <span>โทร: 065-989-5887</span>
+      <span>อีเมล: k2sign.thailand@gmail.com</span>
+      <span class="caption">© K2SIGN Media Co., Ltd.</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ========== G2 Mobile Sticky Bottom CTA (✅Q7) ========== -->
+<div class="sticky-cta">
+  <a class="btn btn-line" href="https://line.me/R/ti/p/@k2sign" data-event="click_line">LINE</a>
+  <a class="btn btn-tel" href="tel:0659895887" data-event="click_phone">โทร</a>
+  <a class="btn btn-primary" href="/quote/" data-event="start_lead_form">ส่งแบบ</a>
+</div>
+
+<script>
+/* K2SIGN Pricing Selector — ตาม Developer Handoff Final v1.2
+ * Mobile/Tablet: เลือกขนาดก่อน → ราคาตามช่วงจำนวน → toggle 1/2 ด้าน (+N ตามขนาดทันที)
+ * ราคา = matrix[size][tier] + (side2 ? surcharge[size] : 0)
+ * ห้ามแก้ตัวเลข — source of truth: pricing-data.json (LOCKED 14 ก.ค. 2026) */
+(function () {
+  "use strict";
+  var DATA = JSON.parse(document.getElementById("k2-pricing-data").textContent);
+
+  /* ---------- Desktop: ตารางเต็ม 8×7 + ตารางเพิ่ม 2 ด้าน (สร้างจาก JSON — ไม่ hardcode) ---------- */
+  function buildTable1Side() {
+    var el = document.getElementById("k2-table-1side");
+    if (!el) return;
+    var h = '<table class="k2-price"><thead><tr><th class="size-col">ขนาด</th>';
+    DATA.qty_tiers.forEach(function (t) { h += "<th>" + t.replace("-", "–") + " ชิ้น</th>"; });
+    h += "</tr></thead><tbody>";
+    DATA.sizes_cm.forEach(function (s) {
+      h += '<tr><td class="size-col">' + s + " ซม." +
+        (s === DATA.popular_size ? ' <span class="badge-popular">ยอดนิยม</span>' : "") + "</td>";
+      DATA.price_matrix_1side[String(s)].forEach(function (p) { h += "<td>" + p + "</td>"; });
+      h += "</tr>";
+    });
+    h += '<tr class="row-500"><td colspan="' + (DATA.qty_tiers.length + 1) + '">' +
+      DATA.over_500_label + "</td></tr></tbody></table>";
+    el.innerHTML = h;
+  }
+  function buildTable2Side() {
+    var el = document.getElementById("k2-table-2side");
+    if (!el) return;
+    var h = '<table class="k2-price"><thead><tr><th class="size-col">ขนาด</th>';
+    DATA.sizes_cm.forEach(function (s) { h += "<th>" + s + " ซม.</th>"; });
+    h += '</tr></thead><tbody><tr><td class="size-col">เพิ่ม (บาท/ชิ้น)</td>';
+    DATA.sizes_cm.forEach(function (s) { h += "<td>+" + DATA.two_side_surcharge[String(s)] + "</td>"; });
+    h += "</tr></tbody></table>";
+    el.innerHTML = h;
+  }
+  buildTable1Side();
+  buildTable2Side();
+  ["k2-note-desktop", "k2-note-mobile"].forEach(function (id) {
+    var n = document.getElementById(id);
+    if (n) n.textContent = DATA.price_note;
+  });
+
+  /* ---------- Mobile/Tablet: Pricing Selector ---------- */
+  var root = document.getElementById("k2-pricing-selector");
+  if (!root) return;
+
+  var state = { size: DATA.popular_size, side: 1 };
+
+  function calc(size, tierIdx, side) {
+    var base = DATA.price_matrix_1side[String(size)][tierIdx];
+    return side === 2 ? base + DATA.two_side_surcharge[String(size)] : base;
+  }
+  // expose for automated test (QA 112 ค่า)
+  window.K2_CALC = calc;
+  window.K2_DATA = DATA;
+
+  function render() {
+    var s = state.size, side = state.side;
+    var sur = DATA.two_side_surcharge[String(s)];
+    // size chips
+    root.querySelectorAll("[data-size]").forEach(function (b) {
+      b.classList.toggle("on", Number(b.dataset.size) === s);
+      b.setAttribute("aria-pressed", Number(b.dataset.size) === s);
+    });
+    // side toggle + dynamic +N (Q3: เปลี่ยนตามขนาดทันที)
+    root.querySelectorAll("[data-side]").forEach(function (b) {
+      b.classList.toggle("on", Number(b.dataset.side) === side);
+      if (Number(b.dataset.side) === 2)
+        b.querySelector(".sur").textContent = "+" + sur + " บาท/ชิ้น";
+    });
+    // price rows — ป้าย "ราคาต่อชิ้นตามขนาดและจำนวนที่เลือก" (Q3 ตัด "โดยประมาณ")
+    root.querySelector(".k2-ps-title").textContent =
+      "ราคาต่อชิ้นตามขนาดและจำนวนที่เลือก — ขนาด " + s + " ซม. (พิมพ์ " + side + " ด้าน)";
+    var rows = DATA.qty_tiers.map(function (t, i) {
+      return '<div class="k2-ps-row"><span>' + t.replace("-", " – ") +
+        ' ชิ้น</span><strong>' + calc(s, i, side) + ' บาท/ชิ้น</strong></div>';
+    }).join("");
+    root.querySelector(".k2-ps-rows").innerHTML = rows;
+  }
+
+  root.addEventListener("click", function (e) {
+    var el = e.target.closest("[data-size],[data-side]");
+    if (!el) return;
+    if (el.dataset.size) state.size = Number(el.dataset.size);
+    if (el.dataset.side) state.side = Number(el.dataset.side);
+    render();
+  });
+  render();
+})();
+
+</script>
+</body>
+</html>
